@@ -5,10 +5,6 @@ var content = document.getElementById("content");
 var resultWindow = document.getElementById('modal-result')
 var overlay = document.getElementById('overlay')
 var btnClose = document.getElementById('btn-close')
-
-
-
-
 game.addEventListener('click', e => {
     if (e.target.className = 'block') {
         if (move % 2 === 0) {
@@ -20,7 +16,6 @@ game.addEventListener('click', e => {
         check();
     }
 })
-
 var check = () => {
     var box = document.getElementsByClassName('block');
     var arr = [
@@ -43,7 +38,7 @@ var check = () => {
         ) {
             result = 'НОЛИКИ';
             natija(result);
-        } else if(move == 9) {
+        } else if (move == 10) {
             result = 'НИЧЬЯ';
             natija(result);
         }
